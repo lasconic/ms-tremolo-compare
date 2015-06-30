@@ -1,0 +1,30 @@
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.classycompare.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.classycompare.min.css" />
+    <style type="text/css">
+    .demo {width:1075px; height:640px;}
+    .uc-caption {font-size: 30px;}</style>
+    <title>TREMOLO COMPARE</title>
+</head>
+<body>
+
+<div class="demo">
+    <img src="images/tremolo_after.png" width="1075" height="640" alt="2.0.2" />
+    <img src="images/tremolo_before.png" width="1075" height="640" alt="2.0.1" />
+</div>
+<script>
+    $(window).load(function() {
+    $('.demo').ClassyCompare({
+      defaultgap:50, // the default gap shown before any interactions
+      leftgap:0,  // the gap to the left of the image
+      rightgap:10, // the gap to the right of the image
+      caption: true, // toggle the showing of image caption
+      reveal: 0.5
+    });
+    });
+</script>
+
+</body>
+</html>
